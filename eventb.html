@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./eventb.css" />
+    <script defer src="./eventb.js"></script>
+    <title>eventB</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="event-form">
+        <h2>📢 단 1분! 투표만 해도 영화 티켓 자동 응모!</h2>
+        <div class="poster-row">
+          <div class="poster">
+            <img src="./movie01.jpg" width="250" />
+            <label>
+              <input
+                type="radio"
+                name="movie"
+                value="missionimpossible"
+                required
+              />
+              <p>미션임파서블</p>
+            </label>
+          </div>
+          <div class="poster">
+            <img src="./movie02.jpg" width="250" />
+            <label>
+              <input type="radio" name="movie" value="highfive" />
+              <p>하이파이브</p>
+            </label>
+          </div>
+          <div class="poster">
+            <img src="./movie03.jpg" width="250" />
+            <label>
+              <input type="radio" name="movie" value="sojuwar" />
+              <p>소주전쟁</p>
+            </label>
+          </div>
+        </div>
+
+        <label
+          >1.해당영화 선택이유<input type="text" name="reason" required />
+        </label>
+        <label>2.참여자 이름<input type="text" name="name" required /></label>
+        <label
+          >3.전화번호<input
+            type="text"
+            name="phone"
+            placeholder="01012345678"
+            required
+        /></label>
+        <label>4.이메일<input type="email" name="email" required /></label>
+        <input type="hidden" name="variant" value="B" />
+        <button type="submit">이벤트 참여하기</button>
+      </form>
+    </div>
+  </body>
+</html>
