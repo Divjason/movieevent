@@ -569,10 +569,23 @@ scrollLinks.forEach((link) => {
 });
 
 // 메인페이지 팝업창
+// 메인페이지 팝업 요소
+const popup = document.getElementById("event-popup");
+const popupClose = document.getElementById("popup-close");
+const popupOpen = document.getElementById("popup-open"); // 🎬 다시보기 버튼
+
 window.addEventListener("DOMContentLoaded", () => {
-  const popup = document.getElementById("event-popup");
-  const closeBtn = document.getElementById("popup-close");
-  closeBtn.addEventListener("click", () => (popup.style.display = "none"));
+  // 팝업 닫기 버튼 클릭 시
+  popupClose.addEventListener("click", () => {
+    popup.style.display = "none"; // 팝업 숨기기
+    popupOpen.style.display = "block"; // 🎬 버튼 보이기
+  });
+
+  // 🎬 이벤트 다시 보기 버튼 클릭 시
+  popupOpen.addEventListener("click", () => {
+    popup.style.display = "flex"; // 팝업 다시 열기
+    popupOpen.style.display = "none"; // 🎬 버튼 숨기기
+  });
 });
 
 // 이벤트 A/B 테스트

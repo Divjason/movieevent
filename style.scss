@@ -675,6 +675,15 @@ body {
   font-size: 3rem;
   cursor: pointer;
 }
+.popup-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 8px;
+  z-index: 2;
+}
 
 /* 태블릿 대응 (2개씩) */
 @media screen and (max-width: 992px) {
@@ -712,6 +721,42 @@ body {
     .faq {
       .faq-inner {
         width: 100%;
+      }
+    }
+  }
+  .modal-overlay {
+    width: 100%;
+    padding: 0;
+    .modal-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .modal-top {
+        flex-direction: column;
+        .modal-photo {
+          width: 100%;
+          margin-top: 100px;
+        }
+        form {
+          width: 100%;
+          padding: 20px;
+          .modal-button {
+            a {
+              margin: 8px;
+            }
+          }
+        }
+      }
+      .modal-bottom {
+        .modal-trailer {
+          iframe {
+            width: 100%;
+          }
+        }
+      }
+      .modal-close {
+        top: 20px;
+        right: 20px;
       }
     }
   }

@@ -674,6 +674,16 @@ body {
   cursor: pointer;
 }
 
+.popup-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 8px;
+  z-index: 2;
+}
+
 /* 태블릿 대응 (2개씩) */
 /* 모바일 대응 (1개씩) */
 @media screen and (max-width: 600px) {
@@ -699,6 +709,36 @@ body {
   }
   .container .faq .faq-inner {
     width: 100%;
+  }
+  .modal-overlay {
+    width: 100%;
+    padding: 0;
+  }
+  .modal-overlay .modal-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-overlay .modal-content .modal-top {
+    flex-direction: column;
+  }
+  .modal-overlay .modal-content .modal-top .modal-photo {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .modal-overlay .modal-content .modal-top form {
+    width: 100%;
+    padding: 20px;
+  }
+  .modal-overlay .modal-content .modal-top form .modal-button a {
+    margin: 8px;
+  }
+  .modal-overlay .modal-content .modal-bottom .modal-trailer iframe {
+    width: 100%;
+  }
+  .modal-overlay .modal-content .modal-close {
+    top: 20px;
+    right: 20px;
   }
   .modal-search .search .hash-tag {
     display: none;
