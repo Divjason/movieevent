@@ -45,7 +45,7 @@ form.addEventListener("submit", function (e) {
   }
 
   // 모든 유효성 통과 → 데이터 정리 후 제출
-  form.phone.value = phone; // 정제된 번호로 덮어쓰기
+  form.phone.value = "'" + phone; // 정제된 번호로 덮어쓰기
 
   form.submit(); // 기본 submit 실행 (iframe 방식)
 
