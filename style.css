@@ -724,7 +724,7 @@ body {
   }
   .modal-overlay .modal-content .modal-top .modal-photo {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 150px;
   }
   .modal-overlay .modal-content .modal-top form {
     width: 100%;
@@ -737,8 +737,9 @@ body {
     width: 100%;
   }
   .modal-overlay .modal-content .modal-close {
-    top: 20px;
+    top: 180px;
     right: 20px;
+    z-index: 9999;
   }
   .modal-search .search .hash-tag {
     display: none;
