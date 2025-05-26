@@ -57,7 +57,7 @@ form.addEventListener("submit", function (e) {
   }, 1000); // 1초 후 리디렉션 (전송 시간 고려)
 });
 
-const eventClose = document.getElementById("event-close");
+const eventClose = document.getElementById("eventA-close");
 
 eventClose.addEventListener("click", function () {
   window.location.href = "index.html";

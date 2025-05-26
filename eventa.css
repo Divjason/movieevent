@@ -32,7 +32,7 @@ a {
   flex-direction: column;
   gap: 1rem;
 }
-.container form #event-close {
+.container form #eventA-close {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -87,7 +87,7 @@ a {
   .container form {
     width: 100%;
   }
-  .container form #event-close {
+  .container form #eventA-close {
     top: 60px;
   }
   .container form h2 {
