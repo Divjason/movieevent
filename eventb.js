@@ -55,3 +55,9 @@ form.addEventListener("submit", function (e) {
     window.location.href = "https://movieevnetpage.netlify.app";
   }, 1000); // 1초 후 리디렉션 (전송 시간 고려)
 });
+
+const eventClose = document.getElementById("event-close");
+
+eventClose.addEventListener("click", function () {
+  window.location.href = "index.html";
+});

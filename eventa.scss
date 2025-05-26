@@ -4,7 +4,8 @@
 .container {
   width: 100%;
   height: 100%;
-  background: #000;
+  // background: #000;
+  background: url("./Frame\ 5.png") center/cover no-repeat;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -12,6 +13,14 @@
   align-items: center;
   padding: 20px;
   form {
+    position: relative;
+    #event-close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 2rem;
+      cursor: pointer;
+    }
     h2 {
       text-align: center;
       font-size: 2rem;
@@ -66,6 +75,12 @@
   .container {
     form {
       width: 100%;
+      #event-close {
+        top: 60px;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
       .poster-row {
         flex-direction: column;
       }
